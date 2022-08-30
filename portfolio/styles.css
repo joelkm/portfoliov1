@@ -1,0 +1,126 @@
+/*GENERAL*/
+#main{
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 450px 3000px;
+    grid-template-areas:
+    "navigation navigation" 
+    "aside content";
+    background-color: #1A1B41;
+    color: #ccc;
+    font-size: 28px;
+}
+
+/*NAVIGATION AND SOCIAL*/
+.fixed{
+    position: fixed;
+}
+#socials{
+    grid-area: aside;
+    height: 100%;
+    width: 5%;
+    background-color: #1A1B41;
+}
+#navigation{
+    grid-area: navigation;
+    height: 9%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.nav-link{
+    margin-top: 25px;
+    margin-right: 40px;
+    text-decoration: none;
+    
+}
+.nav-link > span{
+    color: #ccc;
+    font-size: 23px;
+    transition: all 300ms;
+    font-weight: bold;
+}
+.nav-link > span:hover{
+    color: #D90368;
+}
+.nav-link > span > span{
+    color: #D90368;
+}
+
+.nav-resume{
+    margin-top: 31px;
+    margin-right: 40px;
+}
+.resume-btn{
+    border: 3px solid #D90368;
+    border-radius: 6px;
+    color: #D90368;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 8px;
+    transition: 300ms;
+    padding-inline: 25px;
+}
+.resume-btn:hover{
+    color:#ccc;
+    background-color: #D90368;
+    border-color: #D90368;
+}
+
+/*CONTENT*/
+#content{
+    display: block;
+    grid-area: content;
+}
+.landmark{
+    color: #1A1B41;
+}
+.sec-header{
+    font-size: 150px;
+    margin-top: 800px;
+    margin-bottom: 700px;
+}
+.sec-header > span{
+    color: #D90368;
+}
+.sec-content{
+    width: 290px;
+    height: 500px;
+}
+
+#intro{
+    text-align: center;
+}
+#intro > h1{
+    font-size: 130px;
+    margin-bottom: 50px;
+}
+#intro > h1 > span{
+    color: #D90368;
+}
+
+#profile{
+    margin-top: 250px;
+    margin-inline: 200px;
+}
+
+#experience{
+    text-align: right;
+    margin-top: 250px;
+    margin-inline: 200px;
+}
+
+#projects{
+    margin-top: 250px;
+    margin-inline: 200px;
+    text-align: center;
+}
+
+#contact{
+    margin-top: 250px;
+    margin-inline: 200px;
+    text-align: center;
+}
