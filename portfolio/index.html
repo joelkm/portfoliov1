@@ -3,34 +3,38 @@
 <head>
     <meta charset="utf-8">
     <title>Joel Kassim Moratalla</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script type="text/javascript" src=""></script>
+    <script deFER type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <div id="main">
         <aside id="socials" class="fixed">
             <ul>
-                <li><a href="https://github.com/JoelKM"></a></li>
-                <li><a href="https://www.linkedin.com/in/joel-kassim-aa3515231/"></a></li>
+                <li><a href="https://github.com/JoelKM" class="clickable"></a></li>
+                <li><a href="https://www.linkedin.com/in/joel-kassim-aa3515231/" class="clickable"></a></li>
             </ul>
         </aside>
         <nav id="navigation" class="fixed">
             <ol class=" nav justify-content-end">
-                <li>
-                    <a class="nav-link" href="#profile"><span><span>01. </span>know-me</span></a>
+                <li data-page="profile" class="nav-link clickable">
+                    <span><span>01. </span>know-me</span></a>
                 </li>
-                <li>
-                    <a class="nav-link" href="#experience"><span><span>02. </span>my-experience</span></a>
+                <li data-page="experience" class="nav-link clickable">
+                    <span><span>02. </span>my-experience</span></a>
                 </li>
-                <li>
-                    <a class="nav-link" href="#projects"><span><span>03. </span>my-projects</span></a>
+                <li data-page="projects" class="nav-link clickable">
+                    <span><span>03. </span>my-projects</span></a>
                 </li>
-                <li>
-                    <a class="nav-link" href="#contact"><span><span>04. </span>contact-me</span></a>
+                <li data-page="contact" class="nav-link clickable">
+                    <span><span>04. </span>contact-me</span></a>
                 </li>
                 <li class="nav-resume">
-                    <a class="resume-btn" href="#">resume</a>
+                    <a class="resume-btn clickable" href="assets/Resumejoelkassim.pdf" target="_blank">resume</a>
                 </li>
               </ol>
         </nav>
@@ -40,30 +44,28 @@
                 <p>I'm a software developer.</p>
                 <p> This is my web portfolio.</p>
             </div>
-            <div id="profile">
-                <p class="landmark">.</p>
-                <h2 class="sec-header"><span>01.</span>KNOW_ME</h2>
-                <p class=".sec-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perspiciatis dicta nihil, exercitationem suscipit, doloribus voluptatem qui, nostrum deserunt illo voluptatum consequatur enim. Dicta id reiciendis repellendus fugiat neque deleniti.</p>
+            <div class="cont-sect">
+                <h2 id="profile" class="sec-header"><span>01.</span>KNOW_ME</h2>
+                <p class=".sec-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis perspiciatis dicta nihil, exercitationem suscipit, doloribus voluptatem qui, nostrum deserunt illo voluptatum consequatur enim. Dicta id reiciendis repellendus fugiat neque deleniti.</p>
             </div>
-            <div id="experience">
-                <p class="landmark">.</p>
-                <h2 class="sec-header"><span>02.</span>WORK_EXPERIENCE</h2>
-                <p class=".sec-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati maxime excepturi atque minus sed soluta nostrum autem in, praesentium porro cum sapiente magni nam ex eum totam ullam tempora?</p>
+            <div class="cont-sect">
+                <h2 id="experience" class="sec-header"><span>02.</span>WORK_EXPERIENCE</h2>
+                <p class=".sec-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati maxime excepturi atque minus sed soluta nostrum autem in, praesentium porro cum sapiente magni nam ex eum totam ullam tempora?</p>
             </div>
-            <div id="projects">
-                <p class="landmark">.</p>
-                <h2 class="sec-header"><span>03.</span>MY_PROJECTS</h2>
-                <p class=".sec-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nesciunt, explicabo, excepturi praesentium aspernatur ipsum fugit incidunt corrupti modi itaque iure assumenda minima quas aperiam consequuntur, accusamus harum quia quae.</p>
+            <div class="cont-sect">
+                <h2 id="projects" class="sec-header"><span>03.</span>MY_PROJECTS</h2>
+                <p class=".sec-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nesciunt, explicabo, excepturi praesentium aspernatur ipsum fugit incidunt corrupti modi itaque iure assumenda minima quas aperiam consequuntur, accusamus harum quia quae.</p>
             </div>
-            <div id="contact">
-                <p class="landmark">.</p>
-                <h2 class="sec-header"><span>04.</span>CONTACT_ME</h2>
-                <p class=".sec-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolor cumque totam mollitia dolorem dolore velit architecto in consequuntur illo aut obcaecati cum excepturi sed corrupti officia eligendi porro illum!</p>
+            <div class="cont-sect">
+                <h2 id="contact" class="sec-header"><span>04.</span>CONTACT_ME</h2>
+                <p class=".sec-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolor cumque totam mollitia dolorem dolore velit architecto in consequuntur illo aut obcaecati cum excepturi sed corrupti officia eligendi porro illum!</p>
             </div>
         </div>
         <footer>
 
         </footer>
+        <div id="cursor"><img src="assets/custom-cursor.png" alt=></div>
+        <div id="pointer"><img src="assets/custom-pointer.png" alt=></div>
     </div>
 </body>
 </html>
