@@ -10,14 +10,20 @@
     background-color: #1A1B41;
     color: #ccc;
     font-size: 28px;
-    cursor: none;
+    /*cursor: none;
 }
 #main :hover{
-    cursor: none;
+    cursor: none;*/
+}
+/* CURSOR STYLES
+#cursor{
+    position: absolute;
 }
 #pointer{
+    position: absolute;
     visibility: hidden;
 }
+*/
 
 /*NAVIGATION AND SOCIAL*/
 .fixed{
@@ -39,6 +45,7 @@
 .nav-link{
     margin-top: 25px;
     margin-right: 40px;
+    cursor: pointer;
 }
 .nav-link > span{
     color: #ccc;
@@ -75,13 +82,19 @@
     border-color: #D90368;
 }
 
+/*APPEAR ANIMATION*/
+.occult{
+    opacity: 0;
+    margin-left:-1000px;
+}
+
+
 /*CONTENT*/
 #content{
     display: block;
     grid-area: content;
 }
-.cont-sect
-{
+.cont-sect{
     margin-top: 250px;
     margin-inline: 200px;
 }
@@ -89,6 +102,7 @@
     font-size: 150px;
     margin-top: 800px;
     margin-bottom: 700px;
+    transition: 1000ms;
 }
 .sec-header > span{
     color: #D90368;
