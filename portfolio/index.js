@@ -1,5 +1,6 @@
 //GENERAL DOM ACCES
 var headers = document.querySelectorAll('.sec-header');
+var texts= document.querySelectorAll('.sec-text')
 
 
 //NAVIGATE ON CLICK
@@ -34,6 +35,10 @@ $(window).scroll(function () {
             clearTimeout(timeout);
             timeout = null;
             headers.forEach((element)=>{
+                if ($(window).scrollTop() >= (element.offsetTop - 500)) appear(element);
+                else disappear(element);
+            });
+            texts.forEach((element)=>{
                 if ($(window).scrollTop() >= (element.offsetTop - 800)) appear(element);
                 else disappear(element);
             });
