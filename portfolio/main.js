@@ -26,14 +26,14 @@ function disappear(element){
 }
 
 //SCROLL BEHAVIOR
-timeout = null;
+scrollTimeout = null;
 
 $(window).scroll(function () {
-    if (!timeout) {
-        timeout = setTimeout(function () {
+    if (!scrollTimeout) {
+        scrollTimeout = setTimeout(function () {
             console.log('scroll');            
-            clearTimeout(timeout);
-            timeout = null;
+            clearTimeout(scrollTimeout);
+            scrollTimeout = null;
             headers.forEach((element)=>{
                 if ($(window).scrollTop() >= (element.offsetTop - 500)) appear(element);
                 else disappear(element);
@@ -46,22 +46,7 @@ $(window).scroll(function () {
     }
 });
 
-/*
-document.addEventListener('scroll', (event)=>{
-    
-    headers.forEach((element)=>{
-        if (downTo>=(element.offsetTop - 500)) appear(element);
-        else disappear(element);
-    });
-    
-    
-    
-    /*MORE CURSOR CODE
-    var cursor = document.getElementById('cursor');
-    var posY = (parseInt(cursor.style.top.slice(0, cursor.style.top.length -2)));
-    if(posY+downTo>) cursor.style.top = posY+3+'px';
-    else cursor.style.top = posY-3+'px';
-    */
+
 
 
 
@@ -69,17 +54,28 @@ document.addEventListener('scroll', (event)=>{
 
 
 //CURSOR RE-WORK *ignore*
-/*
+
 function relocateCursor(){
     var cursor = document.getElementById('cursor');
     var pointer = document.getElementById('pointer');    
     var posX = window.event.pageX;
     var posY = window.event.pageY;
+    console.log('ejecutado');
     cursor.style.top=posY+2+'px';
     cursor.style.left=posX+2+'px';
     pointer.style.top=posY+2+'px';
     pointer.style.left=posX+2+'px';
 }
+
+document.addEventListener('mousemove', (event)=>{
+    relocateCursor(event);
+});
+
+
+
+
+/*
+
 document.addEventListener('mousemove', (event)=>{
     relocateCursor(event);
 });
