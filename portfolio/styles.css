@@ -15,14 +15,14 @@
 #main :hover{
     cursor: none;
 }
-/*CURSOR STYLES*/
+/*CURSOR STYLES*//*
 #cursor{
     position: absolute;
 }
 #pointer{
     position: absolute;
     opacity: 0;
-}
+}*/
 
 /*NAVIGATION AND SOCIAL*/
 .fixed{
