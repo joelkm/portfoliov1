@@ -367,7 +367,7 @@ a {
 }
 
 .button:hover {
-  width: 200px;
+  width: 250px;
   background-image: linear-gradient(#424242, #1f1f1f);
 }
 
