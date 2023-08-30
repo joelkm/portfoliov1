@@ -479,22 +479,25 @@ h1, h2, h3 {
   height: 60px;
   align-self: center;
   justify-self: center;
-  top: 80vh;
   animation: pulse 2000ms;
   animation-iteration-count: infinite;
   position: absolute;
   z-index: -2;
+  cursor: pointer;
 }
 
 @keyframes pulse {
   0% {
     opacity: 0.1;
+    top: 80vh;
   }
   50% {
     opacity: 0.4;
+    top: 81vh;
   }
   100% {
     opacity: 0.1;
+    top: 80vh;
   }
 }
 

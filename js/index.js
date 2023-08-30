@@ -9,10 +9,10 @@ logo.addEventListener('click', () => {
     location.reload();
 })
 
-document.querySelectorAll('.nav-link').forEach((listitem) => {
-    listitem.addEventListener('click', () => {
+document.querySelectorAll('.link-item').forEach((link) => {
+    link.addEventListener('click', () => {
         console.log("click");
-        let topPosition = document.getElementById(listitem.dataset.page).offsetTop - 200;
+        let topPosition = document.getElementById(link.dataset.page).offsetTop - 200;
         window.scrollTo({
             top: topPosition,
             left: 0,
