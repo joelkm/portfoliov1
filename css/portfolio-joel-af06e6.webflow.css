@@ -394,6 +394,10 @@ a {
 
 /* */
 
+.nav {
+  z-index: 99 !important;
+}
+
 .button {
   cursor: pointer;
   position: relative;
@@ -607,6 +611,7 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .tool {
