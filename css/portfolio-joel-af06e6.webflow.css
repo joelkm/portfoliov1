@@ -384,6 +384,15 @@ a {
   .contact-card {
     width: 80%;
   }
+
+  .tools {
+    display: none !important;
+  }
+  
+  .tools-mb {
+    display: flex !important;
+  }
+
   
 }
 
@@ -622,4 +631,9 @@ body {
   height: 5rem;
   width: 5rem;
   padding: 10px;
+}
+
+.tools-mb {
+  display: none;
+  flex-direction: column;
 }
