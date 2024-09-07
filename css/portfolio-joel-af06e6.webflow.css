@@ -393,7 +393,9 @@ a {
     display: flex !important;
   }
 
-  
+  .my-image {
+    height: 260px !important;
+  }
 }
 
 #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b397d2-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b397df-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b39822-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b3982d-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b39838-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b397f0-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b397fb-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b39806-4122c007, #w-node-_319ea490-2e99-3b2d-5c3d-cd1221b39811-4122c007, #w-node-aa0a57cc-021f-0ba1-f6c1-6a71fb8f54cc-4122c007, #w-node-aa0a57cc-021f-0ba1-f6c1-6a71fb8f54d7-4122c007 {
